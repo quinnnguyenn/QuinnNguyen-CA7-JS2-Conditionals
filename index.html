@@ -23,15 +23,19 @@
         let compchoice = "Bear"
         //computer choice for now
 
+        let message = "";
+
         if (uchoice === compchoice){
-            message = "It's a tie!"
-        }
+            message = "It's a tie!!"
+        } else if (uchoice === "Bear" && compchoice === "Ninja") 
+            messege = "You win!!"
+
 
 
 
 
         document.getElementById("results").innerHTML 
-        = `${uname}, you picked ${uchoice}!<br>The computer picked ${compchoice}`;
+        = `${uname}, you picked ${uchoice}!<br>The computer chose ${compchoice}<br>${messege}`;
         //print on the webpage
 
         console.log(`${uname}, you picked ${uchoice}!`); 
