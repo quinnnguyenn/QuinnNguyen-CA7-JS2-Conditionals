@@ -17,17 +17,24 @@
         alert(amessage)
         //greets the player
 
-        let choice = prompt("Who are you: Bear, Ninja, or Hunter?")
+        let uchoice = prompt("Who are you: Bear, Ninja, or Hunter?")
         //prompt for game choice
 
         let compchoice = "Bear"
         //computer choice for now
 
+        if (uchoice === compchoice){
+            message = "It's a tie!"
+        }
+
+
+
+
         document.getElementById("results").innerHTML 
-        = `${uname}, you picked ${choice}!<br>The computer picked ${compchoice}`;
+        = `${uname}, you picked ${uchoice}!<br>The computer picked ${compchoice}`;
         //print on the webpage
 
-        console.log(`${uname}, you picked ${choice}!`); 
+        console.log(`${uname}, you picked ${uchoice}!`); 
         console.log(`The computer picked ${compchoice}`)
     </script>
 </body>
