@@ -35,6 +35,19 @@
                     message = "You lose!!"
                 }
         }
+        //script if the player chooses bear
+
+                switch (uchoice) {
+            case "Ninja":
+                if (compchoice === "Bear"){
+                    message = "You lose!!"
+                }else if (compchoise === "Ninja"){
+                    message = "It's a tie!!"
+                }else if (compchoise === "Hunter"){
+                    message = "You win!!"
+                }
+        }
+        //script if the player chooses ninja
 
 
 
@@ -44,6 +57,8 @@
 
         console.log(`${uname}, you picked ${uchoice}!`); 
         console.log(`The computer picked ${compchoice}`)
+        console.log(`The computer picked ${message}`)
+        //print on console
     </script>
 </body>
 
