@@ -25,12 +25,16 @@
 
         let message = "";
 
-        if (uchoice === compchoice){
-            message = "It's a tie!!"
-        } else if (uchoice === "Bear" && compchoice === "Ninja") 
-            messege = "You win!!"
-
-
+        switch (uchoice) {
+            case "Bear":
+                if (compchoice === "Bear"){
+                    message = "It's a tie!!"
+                }else if (compchoise === "Ninja"){
+                    message = "You win!!"
+                }else if (compchoise === "Hunter"){
+                    message = "You lose!!"
+                }
+        }
 
 
 
